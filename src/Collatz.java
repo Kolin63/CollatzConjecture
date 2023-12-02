@@ -44,9 +44,6 @@ public class Collatz {
 
         System.out.println("\nAfter " + timesDone + " calculations, " + firstNumber + " has been turned to 1.");
 
-        System.out.print("\nType 1 to run again: ");
-        if (Objects.equals(scanner.next(), "1")){
-            this.run();
-        }
+        this.run();
     }
 }
