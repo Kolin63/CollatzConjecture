@@ -6,14 +6,15 @@ public class Collatz {
 
     void run(){
         // Initialization
-        int number;
-        int firstNumber;
+        long number;
+        long firstNumber;
         Scanner scanner = new Scanner(System.in);
-        System.out.print("\nEnter a Positive Integer: ");
+        System.out.println("\n(Integers can't be greater than 9223372036854775807)");
+        System.out.print("Enter a Positive Integer: ");
 
         do{
             try {
-                number = scanner.nextInt();
+                number = scanner.nextLong();
                 firstNumber = number;
             }catch (InputMismatchException e){
                 number = -1;
