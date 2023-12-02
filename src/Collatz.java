@@ -1,4 +1,5 @@
 import java.util.InputMismatchException;
+import java.util.Objects;
 import java.util.Scanner;
 
 public class Collatz {
@@ -8,7 +9,7 @@ public class Collatz {
         int number;
         int firstNumber;
         Scanner scanner = new Scanner(System.in);
-        System.out.println("\nEnter a Positive Integer: ");
+        System.out.print("\nEnter a Positive Integer: ");
 
         do{
             try {
@@ -41,8 +42,11 @@ public class Collatz {
 
         }while (!(number == 1));
 
-        System.out.println("\n After " + timesDone + " calculations, " + firstNumber + " has been turned to 1.");
+        System.out.println("\nAfter " + timesDone + " calculations, " + firstNumber + " has been turned to 1.");
 
-        this.run();
+        System.out.print("\nType 1 to run again: ");
+        if (Objects.equals(scanner.next(), "1")){
+            this.run();
+        }
     }
 }

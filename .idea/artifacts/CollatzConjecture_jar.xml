@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="CollatzConjecture:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/CollatzConjecture_jar</output-path>
+    <root id="archive" name="Collatz Conjecture.jar">
+      <element id="module-output" name="Collatz Conjecture" />
+    </root>
+  </artifact>
+</component>
